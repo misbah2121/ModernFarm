@@ -1,0 +1,24 @@
+# Godot
+.godot/
+*.import
+/android/
+export_credentials.cfg
+
+# Build hasil export
+*.exe
+*.pck
+*.zip
+*.7z
+
+# Save game lokal
+saves/
+
+# Aset berlisensi (tidak boleh disebarkan ulang) — lihat assets/README.md
+assets/modern_farm/
+assets/fonts/
+assets/ui/
+assets/audio/
+
+# OS
+.DS_Store
+Thumbs.db
