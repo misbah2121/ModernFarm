@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/events/event_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "star_night"
+title = "Malam Bintang"
+description = "Malam Bintang! Penduduk berkumpul di alun-alun. Kamu menerima 100 Gold dari dewan desa.|Bicara dengan penduduk hari ini memberi friendship 3x lipat."
+season = "winter"
+day = 25
+gather_place = "Square"
+sell_category = -1
+sell_bonus = 1.0
+talk_bonus = 3
+gift_item = ""
+gift_amount = 0
+gift_gold = 100

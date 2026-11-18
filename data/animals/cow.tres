@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="AnimalData" load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/animals/animal_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/Cow_16x16.png" id="2_sheet"]
+[ext_resource type="Resource" path="res://data/items/milk.tres" id="3_product"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/cow/Cow_Caramel_16x16.png" id="v1"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/cow/Cow_Baby_16x16.png" id="b0"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/cow/Cow_Baby_Caramel_16x16.png" id="b1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_icon"]
+atlas = ExtResource("2_sheet")
+region = Rect2(880, 75, 16, 16)
+filter_clip = true
+
+[resource]
+script = ExtResource("1_script")
+id = "cow"
+animal_name = "Cow"
+building = "barn"
+price = 1200
+description = "Menghasilkan susu setiap hari jika makan. Warna acak, bisa beranak."
+icon = SubResource("AtlasTexture_icon")
+sheet = ExtResource("2_sheet")
+frame_size = Vector2i(48, 48)
+foot_offset = 11
+row_idle = 1
+row_walk = 3
+row_eat = 2
+walk_speed = 14.0
+body_size = Vector2(26, 8)
+product = ExtResource("3_product")
+produce_days = 1
+tool_required = ""
+names = PackedStringArray("Belang", "Moli", "Susi", "Bella", "Lembu", "Sapi", "Mumu")
+grow_days = 6
+variant_sheets = Array[Texture2D]([ExtResource("2_sheet"), ExtResource("v1")])
+variant_names = PackedStringArray("Belang Hitam", "Karamel")
+baby_sheets = Array[Texture2D]([ExtResource("b0"), ExtResource("b1")])
+baby_frame_size = Vector2i(32, 32)
+baby_variant = PackedInt32Array(0, 1)

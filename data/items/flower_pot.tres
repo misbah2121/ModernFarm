@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/inventory/item_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/icons/Icon_Decor_flower_pot.png" id="2_icon"]
+[ext_resource type="PackedScene" path="res://scenes/decor/flower_pot.tscn" id="3_scene"]
+
+[resource]
+script = ExtResource("1_script")
+id = "flower_pot"
+item_name = "Pot Bunga"
+category = 10
+icon = ExtResource("2_icon")
+max_stack = 20
+sell_price = 35
+buy_price = 140
+description = "Pot tanah liat berisi bunga liar. Pasang di Farm (SPACE), ambil lagi dengan Pickaxe / Axe."
+energy = 0
+placeable = ExtResource("3_scene")

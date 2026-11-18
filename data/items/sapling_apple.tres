@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/inventory/item_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/icons/Icons_16x16_Sapling_Apple.png" id="2_icon"]
+[ext_resource type="PackedScene" path="res://scenes/trees/fruit_tree_apple.tscn" id="3_scene"]
+
+[resource]
+script = ExtResource("1_script")
+id = "sapling_apple"
+item_name = "Bibit Apel"
+category = 1
+icon = ExtResource("2_icon")
+max_stack = 20
+sell_price = 150
+buy_price = 300
+description = "Tanam di Farm (SPACE). Dewasa 7 hari, berbuah Apel di musim Autumn."
+energy = 0
+placeable = ExtResource("3_scene")

@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/resource_node.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/objects/pickups/Pickup_Fruit_Lemon_16x16.png" id="2_tex"]
+[ext_resource type="Resource" path="res://data/items/lemon.tres" id="3_drop_item"]
+
+[node name="ForageLemon" type="Node2D"]
+script = ExtResource("1_script")
+resource_name = "Lemon"
+tool = 0
+hits = 1
+respawn_days = 2
+hit_area = Rect2(-11, -16, 22, 20)
+drop_item = ExtResource("3_drop_item")
+drop_min = 1
+drop_max = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-8, -14)
+texture = ExtResource("2_tex")
+centered = false

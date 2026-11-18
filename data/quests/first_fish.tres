@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="QuestData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/quests/quest_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "first_fish"
+title = "Pemancing Pemula"
+description = "Tangkap 3 ikan (sampah tidak dihitung)."
+offer_text = "Hei! Kamu bisa memancing?|Buktikan! Tangkap 3 ikan apa saja, lalu kembali ke sini."
+thanks_text = "Tiga ikan! Lumayan untuk pemula, hehe."
+giver_id = "toby"
+kind = 1
+target_item = ""
+target_count = 3
+reward_gold = 150
+reward_item = ""
+reward_amount = 0
+reward_friendship = 20
+requires = ""
+season = ""
+order = 4

@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="AnimalData" load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://scripts/animals/animal_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/Duck_White_16x16.png" id="2_sheet"]
+[ext_resource type="Resource" path="res://data/items/duck_egg.tres" id="3_product"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/duck/Duck_Brown_16x16.png" id="v1"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/duck/Duck_Green_Head_16x16.png" id="v2"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/duck/Duck_Red_Eyes_16x16.png" id="v3"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/duck/Duckling_Yellow_16x16.png" id="b0"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/duck/Duckling_Brown_16x16.png" id="b1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_icon"]
+atlas = ExtResource("2_sheet")
+region = Rect2(7, 10, 19, 18)
+filter_clip = true
+
+[resource]
+script = ExtResource("1_script")
+id = "duck"
+animal_name = "Duck"
+building = "coop"
+price = 600
+description = "Bertelur bebek setiap 2 hari jika makan. Tinggal di Coop. Warna acak, bisa beranak."
+icon = SubResource("AtlasTexture_icon")
+sheet = ExtResource("2_sheet")
+frame_size = Vector2i(32, 32)
+foot_offset = 4
+row_idle = 1
+row_walk = 2
+row_eat = 3
+walk_speed = 14.0
+body_size = Vector2(10, 5)
+product = ExtResource("3_product")
+produce_days = 2
+tool_required = ""
+names = PackedStringArray("Kwek", "Donal", "Bebi", "Lulu", "Wewe", "Dodo")
+baby_row_eat = -1
+grow_days = 4
+variant_sheets = Array[Texture2D]([ExtResource("2_sheet"), ExtResource("v1"), ExtResource("v2"), ExtResource("v3")])
+variant_names = PackedStringArray("Putih", "Coklat", "Kepala Hijau", "Mata Merah")
+baby_sheets = Array[Texture2D]([ExtResource("b0"), ExtResource("b1")])
+baby_frame_size = Vector2i(16, 16)
+baby_variant = PackedInt32Array(0, 1, 1, 0)

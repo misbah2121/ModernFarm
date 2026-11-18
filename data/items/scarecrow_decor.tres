@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/inventory/item_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/icons/Icon_Decor_scarecrow_decor.png" id="2_icon"]
+[ext_resource type="PackedScene" path="res://scenes/decor/scarecrow_decor.tscn" id="3_scene"]
+
+[resource]
+script = ExtResource("1_script")
+id = "scarecrow_decor"
+item_name = "Orang-orangan Sawah"
+category = 10
+icon = ExtResource("2_icon")
+max_stack = 20
+sell_price = 62
+buy_price = 250
+description = "Penjaga sawah yang setia. Pasang di Farm (SPACE), ambil lagi dengan Pickaxe / Axe."
+energy = 0
+placeable = ExtResource("3_scene")

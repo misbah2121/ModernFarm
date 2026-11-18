@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="AnimalData" load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://scripts/animals/animal_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/goat/Goat_White_16x16.png" id="2_sheet"]
+[ext_resource type="Resource" path="res://data/items/goat_milk.tres" id="3_product"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/goat/Goat_Brown_16x16.png" id="v1"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/goat/Goat_Brown_2_16x16.png" id="v2"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/goat/Goat_Black_Head_16x16.png" id="v3"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/goat/Goat_Baby_White_16x16.png" id="b0"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/goat/Goat_Baby_Brown_16x16.png" id="b1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_icon"]
+atlas = ExtResource("2_sheet")
+region = Rect2(14, 62, 16, 16)
+filter_clip = true
+
+[resource]
+script = ExtResource("1_script")
+id = "goat"
+animal_name = "Goat"
+building = "barn"
+price = 1000
+description = "Susu Kambing tiap 2 hari. Olah di Cheese Machine jadi Keju Kambing. Warna acak."
+icon = SubResource("AtlasTexture_icon")
+sheet = ExtResource("2_sheet")
+frame_size = Vector2i(32, 48)
+foot_offset = -1
+row_idle = 1
+row_walk = 2
+row_eat = 3
+walk_speed = 15.0
+body_size = Vector2(16, 6)
+product = ExtResource("3_product")
+produce_days = 2
+tool_required = ""
+names = PackedStringArray("Embe", "Jenggot", "Kiko", "Dewi", "Domba Kecil", "Brewok")
+grow_days = 5
+variant_sheets = Array[Texture2D]([ExtResource("2_sheet"), ExtResource("v1"), ExtResource("v2"), ExtResource("v3")])
+variant_names = PackedStringArray("Putih", "Coklat", "Coklat Tua", "Kepala Hitam")
+baby_sheets = Array[Texture2D]([ExtResource("b0"), ExtResource("b1")])
+baby_frame_size = Vector2i(32, 32)
+baby_variant = PackedInt32Array(0, 1, 1, 1)

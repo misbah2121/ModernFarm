@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/crafting/decor_object.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/objects/decor/Pimpkin_Big_16x16.png" id="2_tex"]
+
+[sub_resource type="RectangleShape2D" id="Shape_body"]
+size = Vector2(12, 8)
+
+[node name="PumpkinDecor" type="Node2D"]
+script = ExtResource("1_script")
+footprint = Rect2i(0, 0, 1, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-8, -32)
+texture = ExtResource("2_tex")
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -5)
+shape = SubResource("Shape_body")

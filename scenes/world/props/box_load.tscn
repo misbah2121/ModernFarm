@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/modern_farm/objects/Box_Load_16x16.png" id="1_8s6ma"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_daf0j"]
+size = Vector2(28, 12)
+
+[node name="BoxLoad" type="Node2D" groups=["solid_prop"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-16, -32)
+texture = ExtResource("1_8s6ma")
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -6)
+shape = SubResource("RectangleShape2D_daf0j")

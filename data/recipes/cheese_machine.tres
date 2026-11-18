@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="RecipeData" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/crafting/recipe_data.gd" id="1_script"]
+[ext_resource type="Script" path="res://scripts/inventory/item_data.gd" id="9_item"]
+[ext_resource type="Resource" path="res://data/items/cheese_machine.tres" id="2_result"]
+[ext_resource type="Resource" path="res://data/items/wood.tres" id="3_ing"]
+[ext_resource type="Resource" path="res://data/items/stone.tres" id="4_ing"]
+[ext_resource type="Resource" path="res://data/items/iron_ore.tres" id="5_ing"]
+
+[resource]
+script = ExtResource("1_script")
+id = "cheese_machine"
+result = ExtResource("2_result")
+result_count = 1
+ingredients = Array[ExtResource("9_item")]([ExtResource("3_ing"), ExtResource("4_ing"), ExtResource("5_ing")])
+amounts = Array[int]([20, 10, 2])
+order = 3

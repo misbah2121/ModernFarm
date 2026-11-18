@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/resource_node.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/objects/Rock_Big_Red_Stone_16x16.png" id="2_tex"]
+[ext_resource type="Resource" path="res://data/items/ruby.tres" id="3_drop_item"]
+[ext_resource type="Resource" path="res://data/items/stone.tres" id="4_bonus_item"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_col"]
+size = Vector2(24, 12)
+
+[node name="RockRuby" type="Node2D"]
+script = ExtResource("1_script")
+resource_name = "Batu ruby"
+tool = 2
+hits = 7
+respawn_days = 6
+hit_area = Rect2(-13, -28, 26, 30)
+drop_item = ExtResource("3_drop_item")
+bonus_item = ExtResource("4_bonus_item")
+drop_min = 1
+drop_max = 1
+bonus_chance = 0.5
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-16, -32)
+texture = ExtResource("2_tex")
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0.0, -6.0)
+shape = SubResource("RectangleShape2D_col")

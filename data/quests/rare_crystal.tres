@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="QuestData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/quests/quest_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "rare_crystal"
+title = "Kristal Berkilau"
+description = "Bawa 1 Crystal ke Lila. Cari batu kristal biru di Mine."
+offer_text = "Aku pernah lihat kristal biru di tambang. Indah sekali!|Kalau menemukannya, bawakan satu untukku?"
+thanks_text = "Cantiknya... Akan kusimpan baik-baik. Terima kasih!"
+giver_id = "lila"
+kind = 3
+target_item = "crystal"
+target_count = 1
+reward_gold = 400
+reward_item = ""
+reward_amount = 0
+reward_friendship = 40
+requires = "first_harvest"
+season = ""
+order = 7

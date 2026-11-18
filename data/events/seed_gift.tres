@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/events/event_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "seed_gift"
+title = "Kiriman Benih"
+description = "Musim panas tiba! Ada paket di depan pintu: 5 Corn Seeds dari dewan desa."
+season = "summer"
+day = 1
+gather_place = ""
+sell_category = -1
+sell_bonus = 1.0
+talk_bonus = 1
+gift_item = "seeds_corn"
+gift_amount = 5
+gift_gold = 0

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/inventory/item_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/icons/Icon_Decor_wood_sign.png" id="2_icon"]
+[ext_resource type="PackedScene" path="res://scenes/decor/wood_sign.tscn" id="3_scene"]
+
+[resource]
+script = ExtResource("1_script")
+id = "wood_sign"
+item_name = "Papan Nama"
+category = 10
+icon = ExtResource("2_icon")
+max_stack = 20
+sell_price = 15
+buy_price = 60
+description = "Papan kayu penunjuk. Pasang di Farm (SPACE), ambil lagi dengan Pickaxe / Axe."
+energy = 0
+placeable = ExtResource("3_scene")

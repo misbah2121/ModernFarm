@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/events/event_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "harvest_festival"
+title = "Festival Panen"
+description = "Festival Panen! Penduduk berkumpul di alun-alun dan hasil panen dijual 25% lebih mahal hari ini."
+season = "autumn"
+day = 16
+gather_place = "Square"
+sell_category = 2
+sell_bonus = 1.25
+talk_bonus = 1
+gift_item = ""
+gift_amount = 0
+gift_gold = 0

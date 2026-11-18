@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="QuestData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/quests/quest_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "wood_for_barnaby"
+title = "Kayu Bakar"
+description = "Bawa 20 Wood ke Barnaby. Tebang pohon di Forest dengan Axe."
+offer_text = "Musim dingin nanti tulang tuaku butuh perapian hangat.|Bisa carikan 20 kayu? Hutan di utara desa banyak pohonnya."
+thanks_text = "Wah, banyak sekali! Perapianku aman sampai musim dingin."
+giver_id = "barnaby"
+kind = 3
+target_item = "wood"
+target_count = 20
+reward_gold = 200
+reward_item = "animal_feed"
+reward_amount = 5
+reward_friendship = 25
+requires = ""
+season = ""
+order = 3

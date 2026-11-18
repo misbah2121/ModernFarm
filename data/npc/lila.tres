@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="NpcData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/npc/npc_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/characters/npc/Npc_Lila_16x16.png" id="2_sheet"]
+
+[resource]
+script = ExtResource("1_script")
+id = "lila"
+npc_name = "Lila"
+sheet = ExtResource("2_sheet")
+home = Vector2(340, 300)
+wander_radius = 56.0
+greetings = PackedStringArray("{greet}! Aku sedang cari bahan untuk sup hari ini. Tomat dan wortel, kalau ada.|Sayuran segar itu rahasia masakan enak!", "Kamu sudah coba menanam bawang? Wanginya bikin lapar.", "Aku suka berjalan di dekat sumur. Anginnya segar.")
+rain_lines = PackedStringArray("Hujan begini enaknya makan sup hangat. Kamu mau?", "Dapurku bau kayu basah dan kaldu. Surga!")
+friend_lines = PackedStringArray("{greet}, teman! Kapan-kapan kubuatkan sup spesialku untukmu.")
+bio = "Aku Lila, juru masak keliling. Aku belajar resep dari berbagai penjuru negeri.|Impianku membuka kedai kecil di desa ini."
+like_reply = "Persis bahan yang kucari! Terima kasih!"
+neutral_reply = "Wah, terima kasih. Akan kucari resep yang cocok."
+dislike_reply = "Eh... aku tidak begitu suka ini. Tapi terima kasih sudah berpikir tentangku."
+favorite_items = PackedStringArray("tomato", "carrot", "croissant")
+disliked_items = PackedStringArray("wood", "egg")
+schedule = PackedStringArray("06:00 HouseWest", "08:00 Square", "11:00 Garden", "15:00 NorthRoad", "19:00 Square", "21:00 HouseWest")
+rain_schedule = PackedStringArray("06:00 HouseWest", "12:00 MiraShop", "15:00 HouseWest")

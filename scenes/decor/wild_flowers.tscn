@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/crafting/decor_object.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/objects/decor/Grass_Tufts_Flowers_9.png" id="2_tex"]
+
+[node name="WildFlowers" type="Node2D"]
+script = ExtResource("1_script")
+footprint = Rect2i(0, 0, 1, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-8, -14)
+texture = ExtResource("2_tex")
+centered = false

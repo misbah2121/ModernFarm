@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/modern_farm/buildings/Market_Stand_Yellow_Small_16x16.png" id="1_imoxx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0dptu"]
+size = Vector2(44, 14)
+
+[node name="MarketStandYellowSmall" type="Node2D" groups=["solid_prop"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-24, -64)
+texture = ExtResource("1_imoxx")
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -7)
+shape = SubResource("RectangleShape2D_0dptu")

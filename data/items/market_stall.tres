@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/inventory/item_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/icons/Icon_Decor_market_stall.png" id="2_icon"]
+[ext_resource type="PackedScene" path="res://scenes/decor/market_stall.tscn" id="3_scene"]
+
+[resource]
+script = ExtResource("1_script")
+id = "market_stall"
+item_name = "Kios Kecil"
+category = 10
+icon = ExtResource("2_icon")
+max_stack = 20
+sell_price = 150
+buy_price = 600
+description = "Kios berkanopi untuk halaman. Pasang di Farm (SPACE), ambil lagi dengan Pickaxe / Axe."
+energy = 0
+placeable = ExtResource("3_scene")

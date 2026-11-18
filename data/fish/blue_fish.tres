@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="FishData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/fishing/fish_data.gd" id="1_script"]
+[ext_resource type="Resource" path="res://data/items/blue_fish.tres" id="2_item"]
+
+[resource]
+script = ExtResource("1_script")
+id = "blue_fish"
+fish_name = "Blue Fish"
+item = ExtResource("2_item")
+rarity = 0
+difficulty = 15
+weight = 40.0
+seasons = PackedStringArray()
+start_hour = 6
+end_hour = 26
+rain_only = false
+locations = PackedStringArray()

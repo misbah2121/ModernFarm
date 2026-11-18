@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="NpcData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/npc/npc_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/characters/npc/Npc_Barnaby_16x16.png" id="2_sheet"]
+[ext_resource type="Resource" path="res://data/shop/barnaby_ranch.tres" id="3_shop"]
+
+[resource]
+script = ExtResource("1_script")
+id = "barnaby"
+npc_name = "Barnaby"
+sheet = ExtResource("2_sheet")
+home = Vector2(150, 292)
+wander_radius = 48.0
+greetings = PackedStringArray("{greet}, Nak. Tanahmu itu subur. Aku sendiri yang mengolahnya puluhan tahun lalu.|Kuncinya sabar. Siram tiap hari, dan jangan lupa musimnya!", "Kakiku sakit, tapi hatiku masih muda. Hehe.|Kalau mau beternak, aku masih menjual ayam, sapi, domba, dan babi. Tanya saja!", "Dulu aku menanam jagung sampai ke ujung bukit. Sekarang cukup duduk dan menonton orang lain bekerja.")
+rain_lines = PackedStringArray("Hujan begini bagus untuk ladang. Hari ini kamu bisa santai, Nak.", "Tulang tuaku bisa merasakan hujan sebelum turun. Tepat sekali, kan?")
+friend_lines = PackedStringArray("{greet}, sahabat! Duduklah sebentar, ceritaku belum habis.|Dulu... ah, nanti kuceritakan lain waktu.")
+bio = "Aku Barnaby, petani paling tua di desa ini. Sekarang aku mengurus peternakan kecil.|Ayam, sapi, domba, babi... semuanya kurawat sendiri. Pakan ternak juga kujual.|Tiga tahun berturut-turut aku ikut lomba labu terbesar. Menang dua kali!"
+like_reply = "Ahh, ini yang kusuka! Kamu anak yang baik."
+neutral_reply = "Terima kasih, Nak. Selalu ada gunanya."
+dislike_reply = "Hmph. Ini bukan untuk lidah tuaku."
+favorite_items = PackedStringArray("corn", "milk", "coffee")
+disliked_items = PackedStringArray("radish")
+shop = ExtResource("3_shop")
+schedule = PackedStringArray("06:00 HouseMid", "07:30 Garden", "11:00 Square", "15:00 PlazaEast", "19:00 HouseMid")
+rain_schedule = PackedStringArray("06:00 HouseMid")

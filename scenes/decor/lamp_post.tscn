@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/crafting/decor_object.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/objects/decor/Lamp_Post_16x32.png" id="2_tex"]
+
+[sub_resource type="RectangleShape2D" id="Shape_body"]
+size = Vector2(6, 8)
+
+[sub_resource type="Gradient" id="Gradient_light"]
+offsets = PackedFloat32Array(0, 0.55, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0.45, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="Tex_light"]
+gradient = SubResource("Gradient_light")
+width = 128
+height = 128
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.5, 0)
+
+[node name="LampPost" type="Node2D"]
+script = ExtResource("1_script")
+footprint = Rect2i(0, 0, 1, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-8, -30)
+texture = ExtResource("2_tex")
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -5)
+shape = SubResource("Shape_body")
+
+[node name="Light" type="PointLight2D" parent="."]
+position = Vector2(0, -24)
+color = Color(1, 0.82, 0.5, 1)
+energy = 0.9
+texture = SubResource("Tex_light")
+texture_scale = 1.2

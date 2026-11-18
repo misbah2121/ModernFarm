@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/tree_prop.gd" id="p21_tree"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/objects/trees/Tree_Pine_Dark_Green_Big_16x16.png" id="1_78gj6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ccmro"]
+size = Vector2(12, 8)
+
+[node name="TreePineDarkGreenBig" type="Node2D" groups=["tree"]]
+script = ExtResource("p21_tree")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-32, -96)
+texture = ExtResource("1_78gj6")
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_ccmro")

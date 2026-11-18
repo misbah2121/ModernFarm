@@ -1,0 +1,161 @@
+[gd_scene load_steps=25 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/interior_map.gd" id="1_k2q4o"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/interiors/Hayloft_Upper_Inside_16x16.png" id="2_43u57"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/interiors/Hayloft_Middle_Modular_Inside_16x16.png" id="3_ola0h"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/interiors/Hayloft_Red_Bottom_Inside_16x16.png" id="4_bpu1m"]
+[ext_resource type="PackedScene" path="res://scenes/player/player.tscn" id="5_oxxwx"]
+[ext_resource type="PackedScene" path="res://scenes/world/props/raw_bale_big.tscn" id="6_m541y"]
+[ext_resource type="PackedScene" path="res://scenes/world/props/raw_bale_small.tscn" id="7_2ykl3"]
+[ext_resource type="PackedScene" path="res://scenes/world/props/hay_dry_pile.tscn" id="8_kgb3b"]
+[ext_resource type="PackedScene" path="res://scenes/world/props/sack_jute.tscn" id="9_pni3f"]
+[ext_resource type="PackedScene" path="res://scenes/world/props/box_load.tscn" id="10_arang"]
+[ext_resource type="PackedScene" path="res://scenes/crafting/storage_chest.tscn" id="11_kf8c1"]
+[ext_resource type="PackedScene" path="res://scenes/world/props/manger_vertical.tscn" id="12_tvoqa"]
+[ext_resource type="PackedScene" path="res://scenes/world/props/trough_vertical.tscn" id="13_qun7n"]
+[ext_resource type="PackedScene" path="res://scenes/world/props/milk_can_1.tscn" id="14_kel62"]
+[ext_resource type="PackedScene" path="res://scenes/world/props/milk_can_2.tscn" id="15_4hlbk"]
+[ext_resource type="PackedScene" path="res://scenes/world/props/egg_box.tscn" id="16_o6r4a"]
+[ext_resource type="Script" path="res://scripts/world/map_exit.gd" id="17_p3cve"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e6n63"]
+size = Vector2(240, 118)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4t7ob"]
+size = Vector2(32, 300)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q2o4w"]
+size = Vector2(32, 300)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8wkrq"]
+size = Vector2(97, 40)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_taw43"]
+size = Vector2(97, 40)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l0yct"]
+size = Vector2(46, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_plo0l"]
+size = Vector2(46, 10)
+
+[node name="Barn" type="Node2D"]
+script = ExtResource("1_k2q4o")
+
+[node name="Background" type="ColorRect" parent="."]
+offset_left = -240.0
+offset_top = -120.0
+offset_right = 480.0
+offset_bottom = 400.0
+mouse_filter = 2
+color = Color(0.07, 0.06, 0.06, 1)
+
+[node name="Room" type="Node2D" parent="."]
+
+[node name="Upper" type="Sprite2D" parent="Room"]
+texture = ExtResource("2_43u57")
+centered = false
+
+[node name="Middle1" type="Sprite2D" parent="Room"]
+position = Vector2(0, 128)
+texture = ExtResource("3_ola0h")
+centered = false
+
+[node name="Middle2" type="Sprite2D" parent="Room"]
+position = Vector2(0, 160)
+texture = ExtResource("3_ola0h")
+centered = false
+
+[node name="Bottom" type="Sprite2D" parent="Room"]
+position = Vector2(0, 192)
+texture = ExtResource("4_bpu1m")
+centered = false
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="Back" type="CollisionShape2D" parent="Walls"]
+position = Vector2(120, 59)
+shape = SubResource("RectangleShape2D_e6n63")
+
+[node name="Left" type="CollisionShape2D" parent="Walls"]
+position = Vector2(0, 150)
+shape = SubResource("RectangleShape2D_4t7ob")
+
+[node name="Right" type="CollisionShape2D" parent="Walls"]
+position = Vector2(240, 150)
+shape = SubResource("RectangleShape2D_q2o4w")
+
+[node name="BottomLeft" type="CollisionShape2D" parent="Walls"]
+position = Vector2(48.5, 278)
+shape = SubResource("RectangleShape2D_8wkrq")
+
+[node name="BottomRight" type="CollisionShape2D" parent="Walls"]
+position = Vector2(191.5, 278)
+shape = SubResource("RectangleShape2D_taw43")
+
+[node name="BelowDoor" type="CollisionShape2D" parent="Walls"]
+position = Vector2(120, 292)
+shape = SubResource("RectangleShape2D_l0yct")
+
+[node name="Objects" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="Player" parent="Objects" instance=ExtResource("5_oxxwx")]
+position = Vector2(120, 246)
+
+[node name="RawBaleBig" parent="Objects" instance=ExtResource("6_m541y")]
+position = Vector2(36, 134)
+
+[node name="RawBaleBig2" parent="Objects" instance=ExtResource("6_m541y")]
+position = Vector2(36, 146)
+
+[node name="RawBaleSmall" parent="Objects" instance=ExtResource("7_2ykl3")]
+position = Vector2(58, 134)
+
+[node name="HayDryPile" parent="Objects" instance=ExtResource("8_kgb3b")]
+position = Vector2(84, 132)
+
+[node name="SackJute" parent="Objects" instance=ExtResource("9_pni3f")]
+position = Vector2(168, 136)
+
+[node name="BoxLoad" parent="Objects" instance=ExtResource("10_arang")]
+position = Vector2(200, 138)
+
+[node name="ChestA" parent="Objects" instance=ExtResource("11_kf8c1")]
+position = Vector2(112, 134)
+
+[node name="ChestB" parent="Objects" instance=ExtResource("11_kf8c1")]
+position = Vector2(144, 134)
+
+[node name="MangerVertical" parent="Objects" instance=ExtResource("12_tvoqa")]
+position = Vector2(26, 206)
+
+[node name="TroughVertical" parent="Objects" instance=ExtResource("13_qun7n")]
+position = Vector2(26, 238)
+
+[node name="MilkCan1" parent="Objects" instance=ExtResource("14_kel62")]
+position = Vector2(210, 196)
+
+[node name="MilkCan2" parent="Objects" instance=ExtResource("15_4hlbk")]
+position = Vector2(196, 198)
+
+[node name="EggBox" parent="Objects" instance=ExtResource("16_o6r4a")]
+position = Vector2(204, 228)
+
+[node name="RawBaleSmall2" parent="Objects" instance=ExtResource("7_2ykl3")]
+position = Vector2(212, 252)
+
+[node name="Markers" type="Node2D" parent="."]
+
+[node name="SpawnFromFarm" type="Marker2D" parent="Markers"]
+position = Vector2(120, 248)
+gizmo_extents = 8.0
+
+[node name="ExitToFarm" type="Area2D" parent="."]
+position = Vector2(120, 272)
+script = ExtResource("17_p3cve")
+target_map = "farm"
+size = Vector2(46, 10)
+
+[node name="Shape" type="CollisionShape2D" parent="ExitToFarm"]
+shape = SubResource("RectangleShape2D_plo0l")

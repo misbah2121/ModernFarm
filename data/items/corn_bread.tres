@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/inventory/item_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/icons/Bread_Pot_1_Stone_Oven_16x16.png" id="2_icon"]
+
+[resource]
+script = ExtResource("1_script")
+id = "corn_bread"
+item_name = "Roti Jagung"
+category = 7
+icon = ExtResource("2_icon")
+max_stack = 99
+sell_price = 210
+buy_price = 0
+description = "Roti jagung panggang dari oven batu."
+energy = 70
+buff = 1
+buff_minutes = 120

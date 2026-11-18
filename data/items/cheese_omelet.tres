@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/inventory/item_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/icons/Icon_Dish_Cheese_Omelet_16x16.png" id="2_icon"]
+
+[resource]
+script = ExtResource("1_script")
+id = "cheese_omelet"
+item_name = "Omelet Keju"
+category = 7
+icon = ExtResource("2_icon")
+max_stack = 99
+sell_price = 120
+buy_price = 0
+description = "Telur dadar dengan keju leleh."
+energy = 60
+buff = 0
+buff_minutes = 0

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="RecipeData" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/crafting/recipe_data.gd" id="1_script"]
+[ext_resource type="Script" path="res://scripts/inventory/item_data.gd" id="9_item"]
+[ext_resource type="Resource" path="res://data/items/kitchen_stove.tres" id="2_result"]
+[ext_resource type="Resource" path="res://data/items/stone.tres" id="i0"]
+[ext_resource type="Resource" path="res://data/items/wood.tres" id="i1"]
+
+[resource]
+script = ExtResource("1_script")
+id = "kitchen_stove"
+result = ExtResource("2_result")
+result_count = 1
+ingredients = Array[ExtResource("9_item")]([ExtResource("i0"), ExtResource("i1")])
+amounts = Array[int]([20, 15])
+order = 3
+station = "craft"

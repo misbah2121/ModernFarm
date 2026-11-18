@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="QuestData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/quests/quest_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "first_harvest"
+title = "Panen Pertama"
+description = "Panen 5 tanaman apa saja di Farm."
+offer_text = "Kamu petani baru di ujung timur, kan?|Aku penasaran apa yang bisa kamu tanam. Coba panen 5 tanaman, lalu ceritakan padaku!"
+thanks_text = "Lima tanaman! Ladangmu mulai hidup. Ini sedikit hadiah dariku."
+giver_id = "lila"
+kind = 0
+target_item = ""
+target_count = 5
+reward_gold = 100
+reward_item = "seeds_tomato"
+reward_amount = 3
+reward_friendship = 20
+requires = ""
+season = ""
+order = 1

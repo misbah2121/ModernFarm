@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="QuestData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/quests/quest_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "copper_mine"
+title = "Tembaga untuk Pagar"
+description = "Kumpulkan 10 Copper Ore dengan Pickaxe di Mine."
+offer_text = "Pagar kandangku mulai berkarat.|Kumpulkan 10 Copper Ore dari tambang di barat desa, ya."
+thanks_text = "Tembaga bagus! Pagarku akan kokoh lagi."
+giver_id = "barnaby"
+kind = 2
+target_item = "copper_ore"
+target_count = 10
+reward_gold = 300
+reward_item = ""
+reward_amount = 0
+reward_friendship = 25
+requires = "wood_for_barnaby"
+season = ""
+order = 5

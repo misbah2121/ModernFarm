@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/events/event_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "flower_festival"
+title = "Festival Bunga"
+description = "Hari ini Festival Bunga! Semua penduduk berkumpul di alun-alun desa (09:00-20:00).|Bicara dengan penduduk hari ini memberi friendship 2x lipat."
+season = "spring"
+day = 13
+gather_place = "Square"
+sell_category = -1
+sell_bonus = 1.0
+talk_bonus = 2
+gift_item = ""
+gift_amount = 0
+gift_gold = 0

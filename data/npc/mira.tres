@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="NpcData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/npc/npc_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/characters/npc/Npc_Mira_16x16.png" id="2_sheet"]
+[ext_resource type="Resource" path="res://data/shop/general_store.tres" id="3_shop"]
+
+[resource]
+script = ExtResource("1_script")
+id = "mira"
+npc_name = "Mira"
+sheet = ExtResource("2_sheet")
+home = Vector2(468, 224)
+wander_radius = 24.0
+greetings = PackedStringArray("{greet}! Selamat datang di Toko Serba Ada. Benih, roti, sampai alat, semua ada!", "{greet}! Kamu petani baru di ujung timur itu, kan? Senang akhirnya ada tetangga lagi.|Kalau panenmu melimpah, nanti jual saja padaku.", "Aku suka labu. Pai labu buatan nenekku tidak ada duanya!|Kalau kamu menanam labu di musim gugur, jual padaku ya.")
+rain_lines = PackedStringArray("Hujan lagi... Untung tokoku punya kanopi. Tanamanmu pasti senang, ya?", "Suara hujan di atas kanopi itu menenangkan sekali.")
+friend_lines = PackedStringArray("{greet}, teman! Aku sudah menyisihkan sesuatu untukmu nanti.|Jangan sungkan mampir kapan saja.")
+bio = "Namaku Mira. Aku mengelola Toko Serba Ada sejak kecil, warisan orang tuaku.|Aku hafal harga semua barang di desa ini, jadi jangan coba menawar sembarangan!"
+like_reply = "Wah, ini kesukaanku! Terima kasih banyak!"
+neutral_reply = "Oh, terima kasih. Pasti kupakai."
+dislike_reply = "Hmm... terima kasih, tapi ini bukan seleraku."
+favorite_items = PackedStringArray("pumpkin", "egg", "baguette")
+disliked_items = PackedStringArray("wood", "onion")
+shop = ExtResource("3_shop")
+schedule = PackedStringArray("06:00 HouseEast", "08:30 MiraShop", "17:00 Square", "20:00 HouseEast")
+rain_schedule = PackedStringArray("06:00 HouseEast", "08:30 MiraShop", "17:30 HouseEast")

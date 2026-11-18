@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="RecipeData" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/crafting/recipe_data.gd" id="1_script"]
+[ext_resource type="Script" path="res://scripts/inventory/item_data.gd" id="9_item"]
+[ext_resource type="Resource" path="res://data/items/corn_bread.tres" id="2_result"]
+[ext_resource type="Resource" path="res://data/items/corn.tres" id="i0"]
+[ext_resource type="Resource" path="res://data/items/egg.tres" id="i1"]
+[ext_resource type="Resource" path="res://data/items/milk.tres" id="i2"]
+
+[resource]
+script = ExtResource("1_script")
+id = "cook_corn_bread"
+result = ExtResource("2_result")
+result_count = 1
+ingredients = Array[ExtResource("9_item")]([ExtResource("i0"), ExtResource("i1"), ExtResource("i2")])
+amounts = Array[int]([2, 1, 1])
+order = 15
+station = "cook"

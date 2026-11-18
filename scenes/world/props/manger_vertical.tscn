@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/modern_farm/objects/Manger_Vertical_Full_16x16.png" id="1_ccv4v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c6iji"]
+size = Vector2(14, 28)
+
+[node name="MangerVertical" type="Node2D" groups=["solid_prop"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-8, -32)
+texture = ExtResource("1_ccv4v")
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -14)
+shape = SubResource("RectangleShape2D_c6iji")

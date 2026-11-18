@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="AnimalData" load_steps=11 format=3]
+
+[ext_resource type="Script" path="res://scripts/animals/animal_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/Sheep_White_16x16.png" id="2_sheet"]
+[ext_resource type="Resource" path="res://data/items/wool.tres" id="3_product"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/sheep/Sheep_Black_16x16.png" id="v1"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/sheep/Sheep_Brown_16x16.png" id="v2"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/sheep/Sheep_Gray_16x16.png" id="v3"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/sheep/Sheep_Yellow_16x16.png" id="v4"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/sheep/Sheep_Baby_White_16x16.png" id="b0"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/sheep/Sheep_Baby_Brown_16x16.png" id="b1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_icon"]
+atlas = ExtResource("2_sheet")
+region = Rect2(584, 45, 16, 16)
+filter_clip = true
+
+[resource]
+script = ExtResource("1_script")
+id = "sheep"
+animal_name = "Sheep"
+building = "barn"
+price = 900
+description = "Wolnya bisa dicukur tiap 3 hari (pakai Shears). Warna acak, bisa beranak."
+icon = SubResource("AtlasTexture_icon")
+sheet = ExtResource("2_sheet")
+frame_size = Vector2i(32, 32)
+foot_offset = 6
+row_idle = 1
+row_walk = 2
+row_eat = 3
+walk_speed = 14.0
+body_size = Vector2(18, 6)
+product = ExtResource("3_product")
+produce_days = 3
+tool_required = "shears"
+names = PackedStringArray("Kapas", "Domi", "Wuli", "Salju", "Bulu", "Embek")
+grow_days = 5
+variant_sheets = Array[Texture2D]([ExtResource("2_sheet"), ExtResource("v1"), ExtResource("v2"), ExtResource("v3"), ExtResource("v4")])
+variant_names = PackedStringArray("Putih", "Hitam", "Coklat", "Abu-abu", "Kuning")
+baby_sheets = Array[Texture2D]([ExtResource("b0"), ExtResource("b1")])
+baby_frame_size = Vector2i(32, 32)
+baby_variant = PackedInt32Array(0, 1, 1, 0, 0)

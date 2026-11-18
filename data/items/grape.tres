@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/inventory/item_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/icons/Icons_16x16_Crops_Grape.png" id="2_icon"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/objects/pickups/Pickup_Crop_Grape_16x16.png" id="pk_tex"]
+
+[resource]
+script = ExtResource("1_script")
+id = "grape"
+item_name = "Anggur"
+category = 2
+icon = ExtResource("2_icon")
+pickup_texture = ExtResource("pk_tex")
+max_stack = 99
+sell_price = 115
+buy_price = 0
+description = "Anggur segar hasil panen musim gugur."
+energy = 14

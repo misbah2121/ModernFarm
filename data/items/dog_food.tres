@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/inventory/item_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/icons/Icon_Dog_Food.png" id="2_icon"]
+
+[resource]
+script = ExtResource("1_script")
+id = "dog_food"
+item_name = "Makanan Anjing"
+category = 8
+icon = ExtResource("2_icon")
+max_stack = 99
+sell_price = 5
+buy_price = 25
+description = "Isi mangkuk anjing di dekat rumah anjing (E). Anjing yang makan setiap hari makin sayang padamu."
+energy = 0

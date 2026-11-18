@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="AnimalData" load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://scripts/animals/animal_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/rooster/Rooster_White_16x16.png" id="2_sheet"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/rooster/Rooster_Brown_16x16.png" id="v1"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/rooster/Rooster_Brown_2_16x16.png" id="v2"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/rooster/Rooster_Black_and_Brown_16x16.png" id="v3"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/rooster/Rooster_Golden_16x16.png" id="v4"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/rooster/Rooster_Gray_16x16.png" id="v5"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/rooster/Rooster_Yellow_16x16.png" id="v6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_icon"]
+atlas = ExtResource("2_sheet")
+region = Rect2(290, 49, 12, 15)
+filter_clip = true
+
+[resource]
+script = ExtResource("1_script")
+id = "rooster"
+animal_name = "Rooster"
+building = "coop"
+price = 700
+description = "Ayam jago. Ayam kadang bertelur EMAS, anak ayam bisa menetas, hewan Coop lebih cepat akrab."
+icon = SubResource("AtlasTexture_icon")
+sheet = ExtResource("2_sheet")
+frame_size = Vector2i(16, 32)
+foot_offset = -1
+row_idle = 1
+row_walk = 2
+row_eat = -1
+walk_speed = 17.0
+body_size = Vector2(8, 5)
+product = null
+produce_days = 1
+tool_required = ""
+friend_aura = 3
+names = PackedStringArray("Jago", "Kukuruyuk", "Bima", "Rocky", "Garuda")
+variant_sheets = Array[Texture2D]([ExtResource("2_sheet"), ExtResource("v1"), ExtResource("v2"), ExtResource("v3"), ExtResource("v4"), ExtResource("v5"), ExtResource("v6")])
+variant_names = PackedStringArray("Putih", "Coklat", "Coklat Muda", "Hitam-Coklat", "Emas", "Abu-abu", "Kuning")

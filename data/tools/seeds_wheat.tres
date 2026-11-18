@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ToolData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/farming/tool_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/icons/Icons_16x16_Seed_Bags_Wheat.png" id="2_icon"]
+[ext_resource type="Resource" path="res://data/crops/wheat.tres" id="3_crop"]
+
+[resource]
+script = ExtResource("1_script")
+id = "seeds_wheat"
+tool_name = "Benih Gandum"
+kind = 2
+icon = ExtResource("2_icon")
+stamina_cost = 0
+animation = &""
+tool_range = 1
+hit_frame = 0
+crop = ExtResource("3_crop")

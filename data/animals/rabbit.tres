@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="AnimalData" load_steps=13 format=3]
+
+[ext_resource type="Script" path="res://scripts/animals/animal_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/rabbit/Rabbit_White_16x16.png" id="2_sheet"]
+[ext_resource type="Resource" path="res://data/items/rabbit_fur.tres" id="3_product"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/rabbit/Rabbit_Brown_16x16.png" id="v1"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/rabbit/Rabbit_Brown_Dark_Ears_16x16.png" id="v2"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/rabbit/Rabbit_Gray_16x16.png" id="v3"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/rabbit/Rabbit_Gray_and_White_16x16.png" id="v4"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/rabbit/Rabbit_Spotted_16x16.png" id="v5"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/rabbit/Rabbit_Baby_White_16x16.png" id="b0"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/rabbit/Rabbit_Baby_Brown_16x16.png" id="b1"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/animals/rabbit/Rabbit_Baby_Gray_16x16.png" id="b2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_icon"]
+atlas = ExtResource("2_sheet")
+region = Rect2(8, 47, 16, 16)
+filter_clip = true
+
+[resource]
+script = ExtResource("1_script")
+id = "rabbit"
+animal_name = "Rabbit"
+building = "coop"
+price = 800
+description = "Bulu Kelinci tiap 3 hari (ambil dengan tangan). Tinggal di Coop. Warna acak."
+icon = SubResource("AtlasTexture_icon")
+sheet = ExtResource("2_sheet")
+frame_size = Vector2i(32, 32)
+foot_offset = -1
+row_idle = 1
+row_walk = 2
+row_eat = 3
+walk_speed = 18.0
+body_size = Vector2(10, 5)
+product = ExtResource("3_product")
+produce_days = 3
+tool_required = ""
+names = PackedStringArray("Pompom", "Kuping", "Wortel", "Bunny", "Mochi", "Lompat")
+baby_row_eat = -1
+grow_days = 4
+variant_sheets = Array[Texture2D]([ExtResource("2_sheet"), ExtResource("v1"), ExtResource("v2"), ExtResource("v3"), ExtResource("v4"), ExtResource("v5")])
+variant_names = PackedStringArray("Putih", "Coklat", "Telinga Gelap", "Abu-abu", "Abu-Putih", "Totol")
+baby_sheets = Array[Texture2D]([ExtResource("b0"), ExtResource("b1"), ExtResource("b2")])
+baby_frame_size = Vector2i(16, 16)
+baby_variant = PackedInt32Array(0, 1, 1, 2, 2, 0)

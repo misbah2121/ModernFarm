@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RecipeData" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/crafting/recipe_data.gd" id="1_script"]
+[ext_resource type="Script" path="res://scripts/inventory/item_data.gd" id="9_item"]
+[ext_resource type="Resource" path="res://data/items/storage_chest.tres" id="2_result"]
+[ext_resource type="Resource" path="res://data/items/wood.tres" id="3_ing"]
+
+[resource]
+script = ExtResource("1_script")
+id = "storage_chest"
+result = ExtResource("2_result")
+result_count = 1
+ingredients = Array[ExtResource("9_item")]([ExtResource("3_ing")])
+amounts = Array[int]([25])
+order = 2

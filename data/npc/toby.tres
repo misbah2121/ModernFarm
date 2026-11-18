@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="NpcData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/npc/npc_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/characters/npc/Npc_Toby_16x16.png" id="2_sheet"]
+
+[resource]
+script = ExtResource("1_script")
+id = "toby"
+npc_name = "Toby"
+sheet = ExtResource("2_sheet")
+home = Vector2(640, 292)
+wander_radius = 64.0
+greetings = PackedStringArray("{greet}! Mau main petak umpet? Eh... kamu pasti sibuk ya.", "Aku mau jadi petani hebat seperti Kakek Barnaby!|Tapi Ibu bilang aku harus makan sayur dulu. Hmph.", "Katanya ada tambang di ujung barat. Aku ingin lihat, tapi dilarang!")
+rain_lines = PackedStringArray("Hore, hujan! Aku suka melompat di genangan air!", "Ibu melarangku main hujan. Tapi aku mengintip dari jendela.")
+friend_lines = PackedStringArray("{greet}, Kak! Kakak teman terbaikku di desa ini!")
+bio = "Aku Toby, umurku sepuluh tahun!|Cita-citaku punya kebun labu raksasa."
+like_reply = "Waaah, keren! Makasih, Kak!"
+neutral_reply = "Makasih, Kak!"
+dislike_reply = "Hiii... aku tidak suka itu."
+favorite_items = PackedStringArray("pumpkin", "radish", "cheese")
+disliked_items = PackedStringArray("onion", "carrot")
+schedule = PackedStringArray("06:00 HouseEast", "08:00 Riverside", "12:00 Square", "14:00 Riverside", "20:00 HouseEast")
+rain_schedule = PackedStringArray("06:00 HouseEast", "09:00 Riverside", "18:00 HouseEast")

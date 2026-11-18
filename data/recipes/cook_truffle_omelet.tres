@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="RecipeData" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/crafting/recipe_data.gd" id="1_script"]
+[ext_resource type="Script" path="res://scripts/inventory/item_data.gd" id="9_item"]
+[ext_resource type="Resource" path="res://data/items/truffle_omelet.tres" id="2_result"]
+[ext_resource type="Resource" path="res://data/items/truffle.tres" id="i0"]
+[ext_resource type="Resource" path="res://data/items/duck_egg.tres" id="i1"]
+[ext_resource type="Resource" path="res://data/items/cheese.tres" id="i2"]
+
+[resource]
+script = ExtResource("1_script")
+id = "cook_truffle_omelet"
+result = ExtResource("2_result")
+result_count = 1
+ingredients = Array[ExtResource("9_item")]([ExtResource("i0"), ExtResource("i1"), ExtResource("i2")])
+amounts = Array[int]([1, 1, 1])
+order = 17
+station = "cook"

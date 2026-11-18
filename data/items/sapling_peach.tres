@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/inventory/item_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/icons/Icons_16x16_Sapling_Peach.png" id="2_icon"]
+[ext_resource type="PackedScene" path="res://scenes/trees/fruit_tree_peach.tscn" id="3_scene"]
+
+[resource]
+script = ExtResource("1_script")
+id = "sapling_peach"
+item_name = "Bibit Persik"
+category = 1
+icon = ExtResource("2_icon")
+max_stack = 20
+sell_price = 150
+buy_price = 300
+description = "Tanam di Farm (SPACE). Dewasa 7 hari, berbuah Persik di musim Summer."
+energy = 0
+placeable = ExtResource("3_scene")

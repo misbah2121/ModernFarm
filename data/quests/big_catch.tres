@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="QuestData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/quests/quest_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "big_catch"
+title = "Ikan Merah Legendaris"
+description = "Tangkap 1 Red Fish (hanya saat hujan / badai)."
+offer_text = "Katanya ada ikan merah yang hanya muncul saat hujan.|Kalau kamu bisa menangkapnya, kamu pemancing sejati!"
+thanks_text = "Ikan Merah! Kamu memang hebat!"
+giver_id = "toby"
+kind = 1
+target_item = "red_fish"
+target_count = 1
+reward_gold = 500
+reward_item = ""
+reward_amount = 0
+reward_friendship = 40
+requires = "first_fish"
+season = ""
+order = 8

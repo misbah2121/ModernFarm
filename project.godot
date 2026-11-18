@@ -1,0 +1,56 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Modern Farm"
+run/main_scene="res://scenes/ui/main_menu.tscn"
+config/features=PackedStringArray("4.5", "GL Compatibility")
+
+[autoload]
+
+GameManager="*res://scripts/systems/game_manager.gd"
+TimeManager="*res://scripts/systems/time_manager.gd"
+InventoryManager="*res://scripts/inventory/inventory_manager.gd"
+NpcManager="*res://scripts/npc/npc_manager.gd"
+AnimalManager="*res://scripts/animals/animal_manager.gd"
+QuestManager="*res://scripts/quests/quest_manager.gd"
+EventManager="*res://scripts/events/event_manager.gd"
+AudioManager="*res://scripts/systems/audio_manager.gd"
+FarmServices="*res://scripts/systems/farm_services.gd"
+SaveManager="*res://scripts/systems/save_manager.gd"
+
+[display]
+
+window/size/viewport_width=640
+window/size/viewport_height=360
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+window/stretch/scale_mode="integer"
+window/handheld/orientation=4
+
+[gui]
+
+theme/custom_font="res://assets/fonts/PixelGame.otf"
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
+environment/defaults/default_clear_color=Color(0.15, 0.25, 0.2, 1)
+2d/snap/snap_2d_transforms_to_pixel=true
+2d/snap/snap_2d_vertices_to_pixel=true

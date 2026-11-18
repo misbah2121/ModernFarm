@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/inventory/item_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/icons/Icons_16x16_Seed_Bags_Cauliflower.png" id="2_icon"]
+[ext_resource type="Resource" path="res://data/tools/seeds_cauliflower.tres" id="3_tool"]
+
+[resource]
+script = ExtResource("1_script")
+id = "seeds_cauliflower"
+item_name = "Benih Kembang Kol"
+category = 1
+icon = ExtResource("2_icon")
+max_stack = 99
+sell_price = 22
+buy_price = 45
+description = "Benih kembang kol. Tanam di musim semi, panen 6 hari."
+tool_data = ExtResource("3_tool")

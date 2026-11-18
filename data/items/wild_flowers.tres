@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/inventory/item_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/modern_farm/icons/Icon_Decor_wild_flowers.png" id="2_icon"]
+[ext_resource type="PackedScene" path="res://scenes/decor/wild_flowers.tscn" id="3_scene"]
+
+[resource]
+script = ExtResource("1_script")
+id = "wild_flowers"
+item_name = "Rumpun Bunga"
+category = 10
+icon = ExtResource("2_icon")
+max_stack = 20
+sell_price = 10
+buy_price = 40
+description = "Bunga liar warna-warni. Pasang di Farm (SPACE), ambil lagi dengan Pickaxe / Axe."
+energy = 0
+placeable = ExtResource("3_scene")

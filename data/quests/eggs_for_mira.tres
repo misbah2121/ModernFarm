@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="QuestData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/quests/quest_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "eggs_for_mira"
+title = "Telur untuk Mira"
+description = "Bawa 3 Egg ke Mira. Ayam bisa dibeli di Peternakan Barnaby."
+offer_text = "Aku mau membuat kue, tapi telurnya habis.|Kalau kamu punya ayam, bisa bawakan 3 butir telur?"
+thanks_text = "Telur segar! Kuenya pasti enak. Terima kasih!"
+giver_id = "mira"
+kind = 3
+target_item = "egg"
+target_count = 3
+reward_gold = 150
+reward_item = ""
+reward_amount = 0
+reward_friendship = 30
+requires = ""
+season = ""
+order = 2

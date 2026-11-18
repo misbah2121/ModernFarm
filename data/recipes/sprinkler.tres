@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="RecipeData" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/crafting/recipe_data.gd" id="1_script"]
+[ext_resource type="Script" path="res://scripts/inventory/item_data.gd" id="9_item"]
+[ext_resource type="Resource" path="res://data/items/sprinkler.tres" id="2_result"]
+[ext_resource type="Resource" path="res://data/items/copper_ore.tres" id="3_ing"]
+[ext_resource type="Resource" path="res://data/items/iron_ore.tres" id="4_ing"]
+
+[resource]
+script = ExtResource("1_script")
+id = "sprinkler"
+result = ExtResource("2_result")
+result_count = 1
+ingredients = Array[ExtResource("9_item")]([ExtResource("3_ing"), ExtResource("4_ing")])
+amounts = Array[int]([3, 1])
+order = 1

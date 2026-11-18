@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="QuestData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/quests/quest_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "pumpkin_pie"
+title = "Pai Labu Nenek"
+description = "Bawa 1 Pumpkin ke Mira (tanam di musim gugur)."
+offer_text = "Musim gugur tiba! Saatnya membuat pai labu resep nenekku.|Bawakan aku 1 labu, ya!"
+thanks_text = "Labu yang sempurna! Nanti kusisihkan sepotong pai untukmu."
+giver_id = "mira"
+kind = 3
+target_item = "pumpkin"
+target_count = 1
+reward_gold = 250
+reward_item = ""
+reward_amount = 0
+reward_friendship = 40
+requires = ""
+season = "autumn"
+order = 6

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/modern_farm/objects/flowers/Grass_Tufts_Flowers_3.png" id="1_inkvq"]
+
+[node name="Flowers3" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-8, -16)
+texture = ExtResource("1_inkvq")
+centered = false
